@@ -24,7 +24,8 @@ code {
   text-align: center;
   background-image: linear-gradient(-315deg, #ef233c 40%, #d80032 100%);
   padding: 32px;
-  letter-spacing: 2px
+  letter-spacing: 2px;
+  min-height: 100vh;
 }
 
 .member-list {
@@ -32,11 +33,11 @@ code {
   flex-wrap: wrap;
 }
 
-.note {
+.member {
   background: #edf2f4;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12), 0 5px 2px rgba(0, 0, 0, 0.24);
   width: 100%;
-  max-width: 250px;
+  max-width: 400px;
   padding: 10px;
   margin: 16px auto;
   text-align: left;

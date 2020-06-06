@@ -13,10 +13,15 @@ function App() {
       body: "Web Developer"
     }
   ]);
+
+  const addNewMember = memberObjParam => {
+    setMembers([...members, {...memberObjParam, id: Date.now() }])
+  }
   return (
     <div className='App'>
       <h1>Members</h1>
-    
+      <MemberForm addNewMember={addNewMember} />
+      <Form members={members} />
     </div>
   );
 }
